@@ -23,7 +23,7 @@ import json, os
 from torchdiffeq import odeint, odeint_adjoint
 ```
 ## Instructions for running the code
-User should interact with the code through the **CIFAKE_base_test.ipynb** only. The third cell mount the google drive to the colab, so you should ignore it if you are running the code locally. <ins>In the fourth cell, modify the path to the path to the **models** and **utils** folder. </ins>
+<ins>User should interact with the code through the **CIFAKE_base_test.ipynb** only.</ins> The third cell mount the google drive to the colab, so you should ignore it if you are running the code locally. <ins>In the fourth cell, modify the path to the path to the **models** and **utils** folder. </ins>
 
 We have provided all trained models to reproduce the results. All models are stored in the **save_models_data** or **save_models** folders. A breif description of these models are given as follows:
 
@@ -36,7 +36,7 @@ We have provided all trained models to reproduce the results. All models are sto
 - Densenet121_custom_adversarial.pt: Densenet121 with deep ensemble trained on CIFAKE. Reproduces table 3 and figure 4.
 - ViT_pretrained_adversarial.pt: ViT with deep ensemble trained on CIFAKE. Reproduces table 3 and figure 4.
 
-Be sure to modify the **save_dir** variable to point to the directory that stores the model. Then, you can load the model using a subsequent cell.
+<ins>Be sure to modify the **save_dir** variable to point to the directory that stores the model.</ins> Then, you can load the model using a subsequent cell.
 
 The train and test loss and test accuracy in each epoch are stored as json files in the folder with the same name as the model. 
 
